@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#5c94fc">
+  <meta name="description" content="A playable journey through my Python class portfolio. Explore the projects, meet the little setbacks, and collect a well-earned star.">
+  <title>Nandan's Python Portfolio — Pixel Quest</title>
+  <link rel="icon" href="ui/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="portfolio.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="star-icon" viewBox="0 0 24 24"><path d="M10 1h4v5h3v3h6v4h-4v4h-2v6h-4v-3h-2v3H7v-6H5v-4H1V9h6V6h3z" fill="currentColor"/><path d="M10 9h2v5h-2zm5 0h2v5h-2z" fill="#181820"/></symbol>
+    <symbol id="arrow-icon" viewBox="0 0 24 24"><path d="M4 11h13l-5-5 2-2 9 9-9 9-2-2 5-5H4z" fill="currentColor"/></symbol>
+  </defs></svg>
+  <div id="adventure" hidden>
+    <canvas id="world" aria-label="An interactive pixel landscape. Move with arrow keys or A and D. Jump with Space, Up or W. On touchscreens, drag to move and tap to jump. Photos, links and media are available directly on the cards."></canvas>
+    <div id="worldCards" class="world-cards" aria-label="Portfolio exhibits" hidden></div>
+    <canvas id="actors" aria-hidden="true"></canvas>
+    <main id="startScreen" class="start-screen">
+      <h1><canvas id="titleArt" aria-label="[NAME]'s Python Portfolio"></canvas><span class="sr-only" id="titleText">[NAME]'S PYTHON PORTFOLIO</span></h1>
+      <button id="startButton" class="pixel-button start-button"><span class="play-triangle">▶</span> PRESS ENTER TO START <span class="key-badge">↵</span></button>
+      <button class="start-browse browse-button">BROWSE PORTFOLIO ↗</button>
+    </main>
+    <div id="gameUI" hidden>
+      <div id="pauseOverlay" class="pause-overlay" hidden><h2>PAUSED</h2><button id="resumeButton" class="pixel-button">RESUME ▶</button></div>
+    </div>
+    <footer class="game-footer">
+      <div class="start-controls" id="startControls"><span class="keyboard-hints">← → / A D · MOVE <span>SPACE / ↑ · JUMP</span></span><span class="touch-hints">DRAG TO MOVE · TAP TO JUMP</span></div>
+      <div id="gameStatus" class="game-status" hidden>
+        <section class="checkpoint-label" aria-live="polite"><span id="chapterNumber">CHECKPOINT 01 / 07</span><h2 id="chapterTitle">A little friendly competition.</h2><p id="chapterSubtitle" class="sr-only">The classroom quiz · 3rd place</p></section>
+        <div id="toast" class="toast" role="status"></div>
+        <p id="portalStatus" class="portal-status" hidden></p>
+        <button id="portalButton" class="portal-button" hidden>Enter portfolio →</button>
+      </div>
+      <div id="gameCounter" class="star-counter" hidden><svg><use href="#star-icon"/></svg><span id="starCount">0</span><span class="star-total">/ 1</span><small>STARS</small></div>
+      <div class="header-actions" aria-label="Game settings">
+        <button id="themeButton" class="icon-button" aria-label="Switch to night" title="Switch day / night">☼</button>
+        <button id="soundButton" class="icon-button" aria-label="Mute music and sound" aria-pressed="true" title="Music and sound on / off"><svg viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4zM17 8q5 4 0 8M20 5q7 7 0 14" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+        <button id="pauseButton" class="icon-button game-only" aria-label="Pause game" title="Pause">Ⅱ</button>
+        <button class="text-button browse-button game-only">View portfolio ↗</button>
+      </div>
+    </footer>
+  </div>
+  <main id="portfolio" class="portfolio" aria-label="Python class portfolio"></main>
+  <dialog id="detailDialog" class="detail-dialog"><button class="dialog-close" aria-label="Close details">×</button><div id="detailContent"></div></dialog>
+  <dialog id="celebration" class="celebration"><div class="celebrate-stars" aria-hidden="true">✦ · ✧ · ✦</div><div class="big-star"><svg><use href="#star-icon"/></svg></div><p class="eyebrow">ACHIEVEMENT UNLOCKED · LEVEL 02</p><h2>YOU GOT A STAR!</h2><p>A little recognition.<br>A big reason to keep creating.</p><div class="achievement-label">CONTINUOUS ASSESSMENT · TEST 02</div><button id="celebrateContinue" class="pixel-button">ON TO THE NEXT CHAPTER →</button></dialog>
+  <noscript><div class="noscript">This portfolio adventure needs JavaScript. Please enable it to play and explore the projects.</div></noscript>
+</body>
+</html>
