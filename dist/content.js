@@ -24,7 +24,7 @@ window.PORTFOLIO = {
     aggregatorWebsite: "https://thanosisinevitable.github.io/octo/",
     auracardsWebsite: "https://auracards.onrender.com/",
     auracardsRepository: "https://github.com/thanosisinevitable/Auracards",
-    mediumArticle: "https://medium.com/@daabeedabol3lm40369.nocopium77/snake-eater-33ce573ebfca?sharedUserId=daabeedabol3lm40369.nocopium77",    // your Medium article URL (no star reward)
+    mediumArticle: "https://medium.com/@ephorisrevival/snake-eater-6f61ffd1e648?sharedUserId=ephorisrevival",    // your Medium article URL (no star reward)
     auracardsDemo: "https://drive.google.com/file/d/1gTVJnAt_RQEKR-RDUb2O6-aMb6ybc84s/view"     // optional externally hosted demo URL
   }
 };
