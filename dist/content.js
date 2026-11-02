@@ -17,7 +17,7 @@ window.PORTFOLIO = {
     demoPoster: null,       // optional video poster image
     auracardsScreenshot: "assets/auracards.png",
     projectWriteup: "assets/AuraCards_Project_Writeup.pdf",   // e.g. "assets/auracards-writeup.pdf"
-    presentation: "assets/AuraCards_Presentation.pptx",     // e.g. "assets/auracards-presentation.pptx"
+    presentation: "https://drive.proton.me/urls/HWAQQCZ528#JR2SyJgzxSaH",     // e.g. "assets/auracards-presentation.pptx"
     assessmentPhoto: "assets/cat2.jpg"
   },
   links: {
